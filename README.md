@@ -36,7 +36,28 @@ Fue creado en Google por [Robert Griesemer](https://github.com/griesemer), [Rob 
 
 Go fue anunciado en Noviembre del 2009 pero no fue hasta dos años más tarde cuando lanzaron la primera versión del lenguaje, en Marzo del 2012.
 
+¿Por qué usar Go?
+
+1. **Gran velocidad de compilación**: como hemos visto anteriormente Go es un lenguaje compiado, por lo que nosotros, tendremos que compilar nuestros códigos fuentes a un lenguaje que la CPU sea capaz de entender (código máquina). Go es verdaderamente rápido haciendo esta tarea.
+2. **Alto rendimiento para tareas pesadas**: Go esta diseñado desde su origen para usar todos los nucleos de tu CPU por lo que será capaz de exprimir al máximo toda la potencia de tu servidor.
+3. **Soporte nativo para concurrencia**: la concurrencia es la capacidad de un lenguaje de programación de ejectuar varias tareas al mismo tiempo. Esto que parece algo obvio no lo es tanto; no todos los lenguajes de programación tienen esta capacidad. Go fue diseñado para soportar nativamente los retos concurrentes y esto es una gran ventaja para los desarrolladores de este lenguaje.
+4. **Obliga a implementar buenas practicas**: esto es algo que irás viendo en más detalle a los largo de este curso pero podriamos decir que Go fue diseñador para que sus desarrolladores, las personas que crean software en Go, se vean de alguna manera *forzados* a usar buenas prácticas de programación lo que hará que tu código fuente sea más fácil de entender por otros ingenieros o desarrolladores.
+
 ### Instalar Go 
+
+Para instalar Go en tu máquina te recomiendo que visites la [página web oficial de Go](https://go.dev/) y sigas los pasos que allí se te indiquen para realizar la instalación de Go correctamente.
+
+También es posible instalar Go a través de un gestor de paquetes. Por ejemplo en el caso de usar macOS puedes usar `brew`:
+
+```
+$ brew install go
+```
+
+Para comprobar que has instalado correctamente el binario de Go puedes ejecutar en tu terminal el comando `version`:
+```
+$ go version
+go version go1.18 darwin/amd64
+```
 
 ### Nuestras primeras lineas de código
 
