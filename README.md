@@ -132,3 +132,50 @@ Te dejo como ejercicio que pruebes a crear un programa Hola Mundo en Go de esa m
 ### Uso de funciones
 
 ### Go doc: La forma de ver la documentación
+
+## Módulo 3: Estructuras de control de flujo y condicionales
+
+### El poder de los ciclos en Golang: for, for...while y for...forever
+
+### Operadores lógicos y de comparación
+
+### El condicional if
+
+### Múltiples condiciones anidadas con Switch
+
+### Keywords: defer, break y continue
+
+## Módulo 4: Estructuras de datos básicas
+
+### Arrays y Slices
+
+### Recorrido de Slices con Range
+
+### Clave-valor con Maps
+
+### Structs: La forma de hacer clases en Go
+
+### Modificadores de acceso en funciones y Structs
+
+## Módulo 5: Métodos e interfaces
+
+### Structs y Punteros
+
+### Stringers: personalizar el output de Structs
+
+### Interfaces y listas de interfaces
+
+## Módulo 6: Concurrencia y Channels
+
+### ¿Qué es la concurrencia?
+
+### Primer contacto con las Goroutines
+### Channels: la forma de organizar las goroutines
+
+## Módulo 7: Manejo de paquetes y Go Modules
+
+### go get: El manejador de paquetes
+
+### go modules: Ir más allá del GoPath con Echo
+
+### Modificando módulos con Go
