@@ -12,6 +12,10 @@ Este contenido se comenzó a redactar el 1 de Abril del 2022. Presta atención p
 5. Librerías para backend
 6. Tips
 
+#### Autor del proyecto
+
+Este repositorio con el curso básico de Go ha sido elaborado por Ignacio F. Castillejo Gómez.
+
 #### Gestión de cambios de este proyecto
 
 Si deseas proponer algún cambio en la documentación o código de este proyecto no dudes en abrir una *pull request* o *issue*.
