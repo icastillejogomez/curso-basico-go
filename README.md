@@ -100,6 +100,25 @@ $ go run src/hello_world/main.go
 Hello World
 ```
 
+Para terminar esta sección veamos un ejemplo de algo que vimos anteriormente... ¿Te acuerdas que te dije que Go nos *obliga* a usar buenas práctica de programación? Como sabrás muchos programadores en vez de escribir las funciones de esta manera:
+
+```go
+func functionName() {
+  // Cuerpo de la función
+}
+```
+
+lo hacen de esta manera:
+
+```go
+func functionName()
+{
+  // Cuerpo de la función
+}
+```
+
+Te dejo como ejercicio que pruebes a crear un programa Hola Mundo en Go de esa manera y veas el resultado que obtienes por consola a la hora de ejecutarlo o compilarlo.
+
 ## Módulo 2: Variables, funciones y documentación
 
 ### Variables, constantes y zero values
