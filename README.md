@@ -69,7 +69,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
+  fmt.Println("Hello World")
 }
 ```
 Puedes ver el archivo en la ruta [src/hello_world/main.go](src/hello_world/main.go)
