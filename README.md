@@ -26,6 +26,12 @@ Go es un lenguaje compilado y estáticamente tipado. ¿Qué quiere decir esto? B
 1. **Compilado**: cuando decimos que un lenguaje es compilado nos referimos a que la CPU de nuestro ordenador no es capaz de entender *perse* el código fuente que nosotros escribimos. Para poder ejecutar nuestros programas escritos en Go será necesario que **otro programa** transforme nuestro código fuente a otro tipo de código que la CPU **si es capaz de entender**, y por lo tanto de ejecutar. A este proceso se le llamada compilar. Es por esto que decimos que Go, es un lenguaje compilado.
 2. **Estáticamente tipado**: cuando veamos las variables en Go, veremos que para guardar un dato (en una variable) será necesario especificar que necesitamos dicha variable **y su tipo**. Pero... veamos esto más detenídamente. Imagina que necesitas que un usuario se está registrando en tu aplicación y que para poder hacerlo debe enviarte su email y la contraseña. Tu necesitaras guardar estos dos datos en dos variables. Que un lenguaje sea estáticamente tipado quiere decir que tu **no solo** deberás programar estas dos variables sino que **tendrás que especificar el tipo de dato que va a guardar**. En el ejemplo anterior, ambas variables serán de tipo texto o como se dice en ingles (y en el mundo del software) serán de tipo **String**. Hay más tipos de datos como números, etc. pero eso lo veremos más adelante.
 
+Pero... **¿Por qué muchas veces leemos Go como "Golang"?** Esto fue debido a que cuando pensaron que los desarrolladores buscarían información sobre Go en los buscadores, la palabra "Go" podría llevara  confusiones y por eso aunque le lenguaje se llama "Go" en internet todos hacemos referencia a él como "**Golang**".
+
+Fue creado en Google por [Robert Griesemer](https://github.com/griesemer), [Rob Pike](https://twitter.com/rob_pike?lang=es) y [Ken Thompson](https://es.wikipedia.org/wiki/Ken_Thompson). El motivo de su creación fue ayudar a los desarrolladores e ingenieros de Google a ser capaces de llevar a cabo tareas extremadamente pesadas. Es por eso que crearon un lenguaje con la potencia de C pero con una sintaxis y experiencia de desarrollo como más cómoda. Es con esta idea como los ingenieros de Google concibieron Go.
+
+Go fue anunciado en Noviembre del 2009 pero no fue hasta dos años más tarde cuando lanzaron la primera versión del lenguaje, en Marzo del 2012.
+
 ### Instalar Go 
 
 ### Nuestras primeras lineas de código
