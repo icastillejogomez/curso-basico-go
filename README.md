@@ -61,6 +61,45 @@ go version go1.18 darwin/amd64
 
 ### Nuestras primeras lineas de código
 
+Es hora de hacer nuestro primer programa escrito en Go. Para ello vamos a desarrollar el programa Hola Mundo que simplementa va a escribir en consola la palabra "Hello World".
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World")
+}
+```
+Puedes ver el archivo en la ruta [src/hello_world/main.go](src/hello_world/main.go)
+
+Veamos detalladamente el código anterior:
+
+1. En primer lugar vemos que tenemos en la primera linea `package main` esto es para indicar el package de dicho archivo. Como el archivo se llama `main.go` usaremos la palabra **main** para describir el paquete.
+2. A continuación vemos en la linea #3 `import "fmt"`. Esta linea indica a nuestro programa que tiene que importar la librería `fmt` para que podamos usarla posteriormente. 
+3. En el resto del archivo vemos que hemos definido una función llamada `main`. Por convención, al ejecutar un programa escrito en Go, el programa iniciará su ejecución por dicha función `main` por lo que si cambiáramos este nombre nuestro programa no funcionaría ya que no sabría por donde debe de empezar.
+4. Dentro de nuestra función `main` ejecutamos la siguiente instrucción: `fmt.Println("Hello World")`. Lo que estamos haciendo en esta linea es ejecutar la función `Println` dentro de la librería `fmt` y pasarla como primer argumento la cadena de texto `Hello World`
+
+Para poder ejectuar el siguiente código debemos compilarlo primero. Para ello vamos a ejecutar el siguiente comando (ten en cuenta que si has creado una estructura de carpetas diferente deberas adaptar el siguiente comando a ella):
+
+```
+$ go build -o src/hello_world/main src/hello_world/main.go
+```
+
+Para ejecutar nuestro programa lo haremos de la siguiente manera:
+```
+$ src/hello_world/main
+Hello World
+```
+
+¿Aburrido esto de estar compilando a cada rato para probar piezas de código tan pequeñas verdad? Go nos ofrece el comando `run` que nos compila en una carpeta temporal nuestro código y a la vez lo ejecuta para hacernos la vida más fácil. La menera de hacerlo es la siguiente:
+
+```
+$ go run src/hello_world/main.go
+Hello World
+```
+
 ## Módulo 2: Variables, funciones y documentación
 
 ### Variables, constantes y zero values
