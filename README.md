@@ -121,6 +121,30 @@ Te dejo como ejercicio que pruebes a crear un programa Hola Mundo en Go de esa m
 
 ## Módulo 2: Variables, funciones y documentación
 
+En esta sección vamos a ver esas pequeñas cajas de memoria que nos van a permitir guardar datos en ellas. Para comenzar veamos un ejemplo de constantes.
+
+Las constantes son variables cuyo valor no puede cambiar a lo largo de la ejecución de un programa. Puede parecer contraintuitivo *limitarnos* a no poder cambiar el valor de una variable pero hay innumerables ocasiones en las que esto tiene muchísimo sentido. Piensa por ejemplo... en un programa que hace algún tipo de cálculo matemático que requiere el valor de PI (3.14). Este es un valor constante en las matemáticas ya que PI absolutamente nunca cambiará de valor. En esta caso te es útil poder declarar la variable como constante para evitarte la posibilidad de cometer un error en el futuro y editar el valor de PI a un número incorrecto.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// Vamos a definir a continuación una variable constante. Una variable constante
+	// es una variable cuyo valor no puede cambiar NUNCA.
+
+	// Para declarar una constante vamos a usar la keyword `const` seguida del tipo de dato que va a almacenar
+	const pi float64 = 3.1416
+	fmt.Printf("El valor de PI es: %f\n", pi)
+
+	// Aunque también podemos definir el tipo "al vuelo" dejando a Go que lo infiera.
+	const e = 2.61
+	fmt.Printf("El valor del número e es: %f\n", e)
+}
+```
+Puedes encontrar este archivo en [/src/variables/constantes.go](/src/variables/constantes.go)
+
 ### Variables, constantes y zero values
 
 ### Operadores aritméticos
