@@ -123,6 +123,8 @@ Te dejo como ejercicio que pruebes a crear un programa Hola Mundo en Go de esa m
 
 En esta sección vamos a ver esas pequeñas cajas de memoria que nos van a permitir guardar datos en ellas. Para comenzar veamos un ejemplo de constantes.
 
+Si tienes dudas a cerca de la función `Printf` puedes visitar [este enlace](https://www.educative.io/edpresso/how-to-use-the-printf-function-in-golang).
+
 Las constantes son variables cuyo valor no puede cambiar a lo largo de la ejecución de un programa. Puede parecer contraintuitivo *limitarnos* a no poder cambiar el valor de una variable pero hay innumerables ocasiones en las que esto tiene muchísimo sentido. Piensa por ejemplo... en un programa que hace algún tipo de cálculo matemático que requiere el valor de PI (3.14). Este es un valor constante en las matemáticas ya que PI absolutamente nunca cambiará de valor. En esta caso te es útil poder declarar la variable como constante para evitarte la posibilidad de cometer un error en el futuro y editar el valor de PI a un número incorrecto.
 
 ```go
