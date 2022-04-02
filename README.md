@@ -178,6 +178,8 @@ func main() {
   fmt.Printf("La nueva contraseña del usuario es: %s\n", password)
 }
 ```
+Puedes encontrar este archivo en [/src/variables/variables.go](/src/variables/variables.go)
+
 
 Es importante tener en cuenta que si declaramos una variable que no usamos en ningún punto de nuestro programa el compilador de Go fallará. (Prueba a descomentar el siguiente código)
 
@@ -217,6 +219,8 @@ func main() {
   fmt.Printf("La cadena de texto por defecto es: \"%s\"\n", texto)
 }
 ```
+Puedes encontrar este archivo en [/src/variables/valores_por_defecto.go](/src/variables/valores_por_defecto.go)
+
 
 #### Ejercicio
 
