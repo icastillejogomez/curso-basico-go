@@ -120,6 +120,7 @@ func functionName()
 Te dejo como ejercicio que pruebes a crear un programa Hola Mundo en Go de esa manera y veas el resultado que obtienes por consola a la hora de ejecutarlo o compilarlo.
 
 ## Módulo 2: Variables, funciones y documentación
+### Variables, constantes y zero values
 
 En esta sección vamos a ver esas pequeñas cajas de memoria que nos van a permitir guardar datos en ellas. Para comenzar veamos un ejemplo de constantes.
 
@@ -147,7 +148,90 @@ func main() {
 ```
 Puedes encontrar este archivo en [/src/variables/constantes.go](/src/variables/constantes.go)
 
-### Variables, constantes y zero values
+Variables
+
+En este archivo vamos a definir variables normales. Es decir, aunque el tipo de dato que van a guardar será fijo, su valor si podrá cambiar a lo largo del programa.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// Para definir una variable usaremos la keyword `var` seguido el tipo de dato que va a guardar
+	var username string = "Satoshi Nakamoto"
+	fmt.Printf("El nombre de usuario seleccionado es: %s\n", username)
+
+	// Otra forma de definir una variable es de la forma `<nombre> := valor`
+	// En esta caso estamos dejando a Go inferir el tipo de dato que va a guardar la variable
+	// Es importante tener en cuenta que cuando usamos el operador `:=` la variable no ha sido
+	// declarada con anterioridad ya que la expresión `:=` solo nos sirve para declarar por
+	// primera vez una variable
+	password := "I'm the CIA"
+	fmt.Printf("La contraseña del usuario es: %s\n", password)
+
+	// Como estas variables son "normales", podemos cambiar el valor de las mismas cuando queramos.
+	// Para hacer esto usaremos el operador `=`. Como podrás observar no usa los dos puntos `:`
+	password = "Who knows..."
+	fmt.Printf("La nueva contraseña del usuario es: %s\n", password)
+}
+```
+
+Es importante tener en cuenta que si declaramos una variable que no usamos en ningún punto de nuestro programa el compilador de Go fallará. (Prueba a descomentar el siguiente código)
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var variableInutil int = 12
+}
+```
+
+
+Valores por defecto
+
+Hemos visto en el archivo anterior `variables.go` que no podemos declarar variables que no usemos. Ahora vamos a ver que pasa si creamos variables que SI usamos pero que no establecemos un valor inicial.
+
+En una clase posterior vamos a ver detalladamente todos los tipos de datos que podemos manejar con Go pero ahora nos vamos a centrar en los siguientes:	 
+1. Valores enteros: estos son números sin decimales	 
+2. Valores en coma flotante: estos son valores con decimales	 
+3. Valores booleanos: los valores booleanos (que vienen del álgebra de Bool) solo pueden ser verdadero (true) o falso (false)	 
+4. Strings: estos son cadenas de texto o literales
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var entero int
+	var flotante float64
+	var booleano bool
+	var texto string
+
+	fmt.Printf("El valor entero por defecto es: %d\n", entero)
+	fmt.Printf("El valor de coma flotante por defecto es: %f\n", flotante)
+	fmt.Printf("El valor booleano por defecto es: %t\n", booleano)
+	fmt.Printf("La cadena de texto por defecto es: \"%s\"\n", texto)
+}
+```
+
+#### Ejercicio
+
+En este ejercicio deberás calcular la superficie (area) de un cuadrado.
+
+Puedes ver la solución a este ejercicio en el archivo [/src/variables/ejercicio.go](/src/variables/ejercicio.go)
+
+Si quieres profundizar el los conceptos básicos de la algoritmia numérica te propongo la siguiente pregunta:
+
+    En el ejercicio anterior, si estableces la longitud 
+    de los lados del cuadrado en 12.4 verás que el resultado 
+    que arroja Go al multiplicar dos veces dicho valor 
+    es: 153.76000000000002 cuando el resultado realmente es 153.76
+
+    ¿Por qué sucede esto? ¿Por qué Go nos añade 0.00000000000002 al resultado?
 
 ### Operadores aritméticos
 
