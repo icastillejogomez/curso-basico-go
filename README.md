@@ -337,6 +337,37 @@ func main() {
 ```
 Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/modulo.go](/src/operadores_aritmeticos/modulo.go)
 
+También hay dos operadores aritméticos que nos servirán para incrementar o decrementar en 1 el valor de una variable numérica. Estos operadores serán `++` y `--` y funcionan de la siguiente manera:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var x int = 6
+  fmt.Printf("El valor de X es: %v\n", x)
+
+  x++
+  fmt.Printf("El valor de X es: %v\n", x)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/incrementar.go](/src/operadores_aritmeticos/incrementar.go)
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var x int = 6
+  fmt.Printf("El valor de X es: %v\n", x)
+
+  x--
+  fmt.Printf("El valor de X es: %v\n", x)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/decrementar.go](/src/operadores_aritmeticos/decrementar.go)
 
 ### Tipos de datos primitivos
 
