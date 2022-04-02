@@ -252,11 +252,11 @@ package main
 import "fmt"
 
 func main() {
-	const x = 10
-	const y = 10
-	const suma = x + y
+  const x = 10
+  const y = 10
+  const suma = x + y
 
-	fmt.Printf("La suma de X + Y es: %v + %v = %v\n", x, y, suma)
+  fmt.Printf("La suma de X + Y es: %v + %v = %v\n", x, y, suma)
 }
 ```
 Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/suma.go](/src/operadores_aritmeticos/suma.go)
