@@ -122,6 +122,8 @@ Te dejo como ejercicio que pruebes a crear un programa Hola Mundo en Go de esa m
 ## Módulo 2: Variables, funciones y documentación
 ### Variables, constantes y zero values
 
+#### Constantes
+
 En esta sección vamos a ver esas pequeñas cajas de memoria que nos van a permitir guardar datos en ellas. Para comenzar veamos un ejemplo de constantes.
 
 Si tienes dudas a cerca de la función `Printf` puedes visitar [este enlace](https://www.educative.io/edpresso/how-to-use-the-printf-function-in-golang).
@@ -148,7 +150,7 @@ func main() {
 ```
 Puedes encontrar este archivo en [/src/variables/constantes.go](/src/variables/constantes.go)
 
-Variables
+#### Variables
 
 En este archivo vamos a definir variables normales. Es decir, aunque el tipo de dato que van a guardar será fijo, su valor si podrá cambiar a lo largo del programa.
 
@@ -188,9 +190,7 @@ func main() {
 	var variableInutil int = 12
 }
 ```
-
-
-Valores por defecto
+#### Valores por defecto
 
 Hemos visto en el archivo anterior `variables.go` que no podemos declarar variables que no usemos. Ahora vamos a ver que pasa si creamos variables que SI usamos pero que no establecemos un valor inicial.
 
