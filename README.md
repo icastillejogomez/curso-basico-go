@@ -186,8 +186,6 @@ Es importante tener en cuenta que si declaramos una variable que no usamos en ni
 ```go
 package main
 
-import "fmt"
-
 func main() {
   var variableInutil int = 12
 }
