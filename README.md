@@ -246,6 +246,8 @@ Los operadores aritméticos son esos operadores que te permitirán operar valore
 
 A continuación veamos unos ejemplos de los operadores anteriores:
 
+#### Suma
+
 ```go
 package main
 
@@ -260,6 +262,76 @@ func main() {
 }
 ```
 Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/suma.go](/src/operadores_aritmeticos/suma.go)
+
+#### Resta
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  const x = 20
+  const y = 10
+  const resta = x - y
+
+  fmt.Printf("La resta de X - Y es: %v + %v = %v\n", x, y, resta)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/resta.go](/src/operadores_aritmeticos/resta.go)
+
+#### Multiplicación
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  const x = 2
+  const y = 3
+  const multiplicacion = x * y
+
+  fmt.Printf("La multiplicacion de X * Y es: %v + %v = %v\n", x, y, multiplicacion)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/multiplicacion.go](/src/operadores_aritmeticos/multiplicacion.go)
+
+#### División
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  const x = 6
+  const y = 2
+  const division = x / y
+
+  fmt.Printf("La division de X / Y es: %v + %v = %v\n", x, y, division)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/division.go](/src/operadores_aritmeticos/division.go)
+
+#### Módulo
+
+El módulo es el resto de una división. Si recuerdas, una división tiene 4 partes: el dividendo, el divisor, el cociente (que es el resultado de dividir) y el resto o residuo. En este caso el operador módulo nos da el resto de una operación. Por ejemplo, al dividir 5 (dividendo) entre 2 (divisor) nos da 2 (el cociente) y nos sobra 1 (el resto). Dicho de otra forma: `(Cociente * divisor) + resto = dividendo` que en nuestro caso: `(4 * 2) + 1 = 5`.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  const x = 5
+  const y = 2
+  const modulo = x % y
+
+  fmt.Printf("El resto de dividir X / Y es: %v + %v = %v\n", x, y, modulo)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/modulo.go](/src/operadores_aritmeticos/modulo.go)
 
 
 ### Tipos de datos primitivos
