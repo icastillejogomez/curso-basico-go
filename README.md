@@ -237,6 +237,31 @@ Si quieres profundizar el los conceptos básicos de la algoritmia numérica te p
 
 ### Operadores aritméticos
 
+Los operadores aritméticos son esos operadores que te permitirán operar valores numéricos como la suma, la resta, etc. En go podrás usar los siguientes operadores aritméticos:
+1. **La suma**: Para sumar dos números usaremos el operador `+`
+2. **La resta**: Para restar dos números usaremos el operador `-`
+3. **La multiplicación**: Para multiplicar dos números usaremos el operador `*`
+4. **La división**: Para dividir dos números usaremos el operador `/`
+5. **El módulo**: Para obtener el módulo de una división usaremos el operador `%`
+
+A continuación veamos unos ejemplos de los operadores anteriores:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	const x = 10
+	const y = 10
+	const suma = x + y
+
+	fmt.Printf("La suma de X + Y es: %v + %v = %v\n", x, y, suma)
+}
+```
+Puedes ver este archivo en la ruta [/src/operadores_aritmeticos/suma.go](/src/operadores_aritmeticos/suma.go)
+
+
 ### Tipos de datos primitivos
 
 ### Paquete fmt: algo más que imprimir en consola
