@@ -16,6 +16,10 @@ Este contenido se comenzó a redactar el 1 de Abril del 2022. Presta atención p
 
 Este repositorio con el curso básico de Go ha sido elaborado por Ignacio F. Castillejo Gómez.
 
+#### ¿Dónde encontrar este proyecto?
+
+Puedes encontrar el proyecto entero de este curso en el enlace [https://github.com/icastillejogomez/curso-basico-go](https://github.com/icastillejogomez/curso-basico-go)
+
 #### Gestión de cambios de este proyecto
 
 Si deseas proponer algún cambio en la documentación o código de este proyecto no dudes en abrir una *pull request* o *issue*.
