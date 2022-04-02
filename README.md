@@ -160,22 +160,22 @@ package main
 import "fmt"
 
 func main() {
-	// Para definir una variable usaremos la keyword `var` seguido el tipo de dato que va a guardar
-	var username string = "Satoshi Nakamoto"
-	fmt.Printf("El nombre de usuario seleccionado es: %s\n", username)
+  // Para definir una variable usaremos la keyword `var` seguido el tipo de dato que va a guardar
+  var username string = "Satoshi Nakamoto"
+  fmt.Printf("El nombre de usuario seleccionado es: %s\n", username)
 
-	// Otra forma de definir una variable es de la forma `<nombre> := valor`
-	// En esta caso estamos dejando a Go inferir el tipo de dato que va a guardar la variable
-	// Es importante tener en cuenta que cuando usamos el operador `:=` la variable no ha sido
-	// declarada con anterioridad ya que la expresión `:=` solo nos sirve para declarar por
-	// primera vez una variable
-	password := "I'm the CIA"
-	fmt.Printf("La contraseña del usuario es: %s\n", password)
+  // Otra forma de definir una variable es de la forma `<nombre> := valor`
+  // En esta caso estamos dejando a Go inferir el tipo de dato que va a guardar la variable
+  // Es importante tener en cuenta que cuando usamos el operador `:=` la variable no ha sido
+  // declarada con anterioridad ya que la expresión `:=` solo nos sirve para declarar por
+  // primera vez una variable
+  password := "I'm the CIA"
+  fmt.Printf("La contraseña del usuario es: %s\n", password)
 
-	// Como estas variables son "normales", podemos cambiar el valor de las mismas cuando queramos.
-	// Para hacer esto usaremos el operador `=`. Como podrás observar no usa los dos puntos `:`
-	password = "Who knows..."
-	fmt.Printf("La nueva contraseña del usuario es: %s\n", password)
+  // Como estas variables son "normales", podemos cambiar el valor de las mismas cuando queramos.
+  // Para hacer esto usaremos el operador `=`. Como podrás observar no usa los dos puntos `:`
+  password = "Who knows..."
+  fmt.Printf("La nueva contraseña del usuario es: %s\n", password)
 }
 ```
 
@@ -187,7 +187,7 @@ package main
 import "fmt"
 
 func main() {
-	var variableInutil int = 12
+  var variableInutil int = 12
 }
 ```
 #### Valores por defecto
@@ -206,15 +206,15 @@ package main
 import "fmt"
 
 func main() {
-	var entero int
-	var flotante float64
-	var booleano bool
-	var texto string
+  var entero int
+  var flotante float64
+  var booleano bool
+  var texto string
 
-	fmt.Printf("El valor entero por defecto es: %d\n", entero)
-	fmt.Printf("El valor de coma flotante por defecto es: %f\n", flotante)
-	fmt.Printf("El valor booleano por defecto es: %t\n", booleano)
-	fmt.Printf("La cadena de texto por defecto es: \"%s\"\n", texto)
+  fmt.Printf("El valor entero por defecto es: %d\n", entero)
+  fmt.Printf("El valor de coma flotante por defecto es: %f\n", flotante)
+  fmt.Printf("El valor booleano por defecto es: %t\n", booleano)
+  fmt.Printf("La cadena de texto por defecto es: \"%s\"\n", texto)
 }
 ```
 
